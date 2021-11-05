@@ -7,8 +7,6 @@
             </li>
             <li><router-link class="menu-item" to="/"><i class="icon-home"></i> Home</router-link></li>
             <li><router-link class="menu-item" to="/users"><i class="icon-user"></i> User</router-link></li>
-            <li><router-link class="menu-item" to="/companies"><i class="fa fa-briefcase"></i> Company</router-link></li>
-            <li><router-link class="menu-item" to="/employees"><i class="fa fa-users"></i> Employee</router-link></li>
             <li><router-link class="menu-item" to="/posts"><i class="fa fa-users"></i> Post</router-link></li>
           </ul>
         </div>

@@ -40,8 +40,8 @@ Vue.component('v-select', vSelect)
 import 'vue-select/dist/vue-select.css';
 
 // ckeditor
-// import CKEditor from 'ckeditor4-vue';
-// Vue.use( CKEditor );
+import CKEditor from 'ckeditor4-vue';
+Vue.use( CKEditor );
 
 // toaster
 const Toast = Swal.mixin({
@@ -62,7 +62,7 @@ window.Toast = Toast;
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 Vue.use(VueAxios, axios)
-axios.defaults.baseURL= 'http://7f28-103-210-18-6.ngrok.io';
+axios.defaults.baseURL= 'http://1bea-103-210-18-76.ngrok.io';
 
 // vuex
 import Vuex from 'vuex'

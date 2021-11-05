@@ -3,14 +3,8 @@ import Dashboard from "./components/app/dashboard";
 //users
 import AllUsers from "./components/app/user/index"
 
-//company
-import AllCompany from "./components/app/company/index";
-
 // post
 import AllPost from "./components/app/post/index";
-
-//employee
-import AllEmployee from "./components/app/employee/index";
 
 import store from './store/index';
 
@@ -54,19 +48,6 @@ export const routes = [
     }
   },
 
-  //  company
-  {
-    path: '/companies',
-    component: AllCompany,
-    beforeEnter(to, from, next) {
-      if (store.getters["auth/authenticated"]) {
-        next()
-      } else {
-        next('/login')
-      }
-    }
-  },
-
   //  post
   {
     path: '/posts',
@@ -79,17 +60,4 @@ export const routes = [
       }
     }
   },
-
-  //  Employee
-  {
-    path: '/employees',
-    component: AllEmployee,
-    beforeEnter(to, from, next) {
-      if (store.getters["auth/authenticated"]) {
-        next()
-      } else {
-        next('/login')
-      }
-    }
-  }
 ]
